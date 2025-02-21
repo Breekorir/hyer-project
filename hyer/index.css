@@ -1,0 +1,504 @@
+body,
+h1,
+p,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+#head {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#top-nav img {
+  height: 50px;
+}
+
+#top-nav nav {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bc0ced;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#bottom-nav {
+  background-color: darkgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+}
+
+#bottom-nav nav {
+  display: flex;
+  gap: 20px;
+}
+
+#bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.button {
+  background-color:white;
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: rgb(0, 6, 4);
+  color: white;
+}
+
+.buttons {
+  background-color: transparent;
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+  background-color: black;
+  color: white;
+}
+
+#body {
+  background-image: url(./images/1\ image.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+#body .text {
+  max-width: 600px;
+}
+
+#body h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#body p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: grey;
+  text-wrap: wrap;
+}
+
+.mid h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.mid img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.Benefits {
+  display: flex;
+
+  background-color:aqua;
+  padding: 20px;
+  gap: 40px;
+}
+
+.Benefits .benefits-image {
+  flex: 1;
+}
+
+.Benefits .benefits-image img {
+  width: 100%;
+}
+
+.Benefits .content {
+  flex: 1;
+}
+
+.Benefits h2 {
+  margin-bottom: 10px;
+  padding: 20px 0px;
+}
+
+.Benefits p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0px;
+  font-weight: bold;
+}
+
+.Benefits .content img {
+  height: auto;
+
+  border-radius: 50%;
+}
+.Benefits .content img:hover {
+  background-color: #9a0bc5;
+}
+
+#btn {
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#btn:hover {
+  background-color: #9a0bc5;
+}
+.Tasker {
+  display: flex;
+  align-items: center;
+  background-color: rgb(40, 40, 100);
+  padding: 20px;
+  gap: 40px;
+  color: white;
+}
+
+.Tasker .Tasker-content {
+  flex: 1;
+}
+
+.Tasker .Tasker-content h2 {
+  margin-bottom: 10px;
+  padding: 20px 0px;
+}
+
+.Tasker .Tasker-content p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0px;
+  font-weight: bold;
+}
+
+.Tasker .Tasker-content img {
+  height: auto;
+}
+
+.Tasker .Tasker-content img:hover {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.Tasker .Tasker-image {
+  flex: 1;
+}
+
+.Tasker .Tasker-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#button {
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+#button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
+.Download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: grey;
+}
+
+.Download .Download-image img {
+  justify-content: space-between;
+}
+.Download .content img:hover {
+  background-color: #9a0bc5;
+}
+.hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.hands p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hands img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.prayer {
+  text-align: center;
+  padding: 40px;
+  background-color: #e3e3e3;
+  color: #333;
+}
+
+.prayer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.prayer p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Create {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(128, 0, 128);
+  color: #f7faf8;
+}
+
+.Create h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.Create p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.Create button {
+  background-color: #fafdfb;
+  color: rgb(9, 9, 9);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.Create button:hover {
+  background-color: #000601e6;
+  color: white;
+}
+#Partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+#Partners img {
+  max-width: 150px;
+  height: auto;
+  margin: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#Partners img:hover {
+  transform: scale(1.1);
+  filter: brightness(90%);
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.img img {
+  max-width: auto;
+  height: auto;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 470px; 
+  height: auto;
+  border-radius: 10px; 
+  
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #7a79795d;
+  color: rgb(5, 5, 5);
+  padding: 40px;
+  text-align: left;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer h5 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#footer li {
+  margin-bottom: 8px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #050505;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: rgb(10, 10, 10);
+  text-decoration: underline;
+}
+
+#footer img {
+  width: 150px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+#footer p {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #0b0b0b;
+}
+
+#footer form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer form input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#footer form button {
+  background-color: #9a0bc5;
+  color: rgb(5, 5, 5);
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#footer form button:hover {
+  background-color: #6d088d;
+}
