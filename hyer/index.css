@@ -311,6 +311,7 @@ button {
   padding: 40px;
   background-color: #f8f9fa;
   color: #333;
+  background-image: url(./) ;
 }
 
 .hands p {
@@ -502,3 +503,23 @@ button {
 #footer form button:hover {
   background-color: #6d088d;
 }
+/*Responsiveness*/
+@media (max-width: 600px){
+  .Benefits{
+    flex-direction: column;
+    
+  }
+  .Tasker{
+    flex-direction: column;
+  }
+  .dropdown{
+    display:none;
+
+  }
+  body{
+    overflow: hidden;
+  }
+
+}
+
+
