@@ -303,29 +303,22 @@ button {
 .Download .content img:hover {
   background-color: #9a0bc5;
 }
-.hands {
+.hands ul {
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   text-align: center;
-  padding: 40px;
-  background-color: #f8f9fa;
-  color: #333;
-  background-image: url(./) ;
+  padding: 10px;
+  list-style-type: none;
+  padding:20px 20px;
 }
 
-.hands p {
-  display: flex;
-  flex-direction: column;
+.hands {
+  background-image:url(Background@2x-scaled.jpg);
+  color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.hands img {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
 }
 
 .prayer {
@@ -349,7 +342,7 @@ button {
 .Create {
   text-align: center;
   padding: 50px;
-  background-color: rgb(128, 0, 128);
+  background-color:rgb(40, 40, 100);
   color: #f7faf8;
 }
 
@@ -382,15 +375,14 @@ button {
 }
 #Partners {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding: 50px;
   background-color: #ffffff;
+  justify-content: center;
 }
 
 #Partners img {
-  max-width: 150px;
+  max-width:150px;
   height: auto;
   margin: 20px;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -419,11 +411,11 @@ button {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  flex-wrap: wrap;
+  
 }
 
 .images img {
-  width: 470px; 
+  width:400px; 
   height: auto;
   border-radius: 10px; 
   
@@ -431,7 +423,6 @@ button {
 
 #footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #7a79795d;
   color: rgb(5, 5, 5);
@@ -516,10 +507,28 @@ button {
     display:none;
 
   }
-  body{
-    overflow: hidden;
+  #partners img{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hands{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img img{
+    height: 200px;
+    width: 300px;
+  }
   }
 
-}
+
 
 
